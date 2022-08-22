@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 5vh;
+}
+h1 span {
+  opacity: 25%;
+}
+
+p {
+  font-size: 20px;
+}
+
+.tag-start {
+  text-align: left;
+  opacity: 25%;
+  margin-bottom: 5px;
+}
+
+.tag-end {
+  text-align: right;
+  opacity: 25%;
+  margin-top: 5px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+}
+nav div {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 150px;
+  height: 45px;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -12px 11px 32px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -12px 11px 32px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -12px 11px 32px 0px rgba(0, 0, 0, 0.1);
+}
+nav div:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+nav .active div {
+  background-color: white;
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 {
+  background: url("../images/backgrounds/pink-background.png");
+  background-size: cover;
+}
+.section-1 p {
+  font-size: 28px;
+  width: 950px;
+}
+.section-1 h1 {
+  font-size: 48px;
+}
+
+.section-2 {
+  background: url("../images/backgrounds/peach-background.png");
+  background-size: cover;
+}
+.section-2 p {
+  width: 950px;
+}
+.section-2 .text-box {
+  background-color: white;
+  z-index: 10000;
+  width: 950px;
+  padding: 1.5vh 3vw;
+  border-radius: 15px;
+  font-size: 20px;
+  box-shadow: -12px 11px 32px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -12px 11px 32px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -12px 11px 32px 0px rgba(0, 0, 0, 0.1);
+}
+.section-2 .slide-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-2 .slide-background::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+.section-2 .slide-1b::before {
+  background: url("../images/backgrounds/mailand2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.section-2 .slide-1c::before {
+  background: url("../images/backgrounds/ntnu.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+.section-2 .slide-1d::before {
+  background: url("../images/backgrounds/hk.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.section-3 {
+  background: url("../images/backgrounds/green-background.png");
+  background-size: cover;
+}
+.section-3 #technology-headline {
+  margin-top: 5vh;
+  font-weight: bold;
+}
+.section-3 .technologies-div {
+  display: flex;
+  width: 75vw;
+  min-width: 900px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.section-3 .technologies-div .technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-3 .technologies-div .technology p {
+  width: 100%;
+  font-size: 16px;
+}
+.section-3 .technologies-div .technology img {
+  height: 75px;
+}
+.section-3 h2 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.section-3 .slide-2a p {
+  width: 70vw;
+}
+.section-3 .slide-2b p {
+  width: 1000px;
+}
+.section-3 .project-image {
+  height: 80vh;
+  width: 100vw;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4 {
+  background: url("../images/backgrounds/blue-background.png");
+  background-size: cover;
+}
+.section-4 ul {
+  list-style-type: none;
+}
+.section-4 li {
+  margin: 1vh 0;
+  font-size: 14px;
+  text-align: left;
+}
+.section-4 p {
+  font-size: 14px;
+}
+.section-4 .contact-div {
+  max-width: 400px;
+  margin-bottom: 10vh;
+}
+.section-4 .contact-div p {
+  width: 400px;
+}
+.section-4 .contact-div img {
+  height: 30px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+.section-4 .contact-div a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+.section-4 .contact-div a:hover {
+  text-decoration: underline;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  -webkit-animation: typing 4s steps(30, end), blink-caret 0.7s step-end infinite;
+          animation: typing 4s steps(30, end), blink-caret 0.7s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}/*# sourceMappingURL=main.css.map */
