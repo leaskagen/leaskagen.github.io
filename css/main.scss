@@ -43,10 +43,9 @@ nav {
     a {
         color: black;
         text-decoration: none;
-        //text-align: center;
         font-size: 22px;
     }
-    div {
+    .nav-buttons {
         background-color: rgb(255, 255, 255, 0.5);
         border-radius: 5px;
         width: 150px;
@@ -60,12 +59,82 @@ nav {
         -moz-box-shadow: -12px 11px 32px 0px rgba(0,0,0,0.1);
     }
 
-    div:hover {
+    .nav-buttons:hover {
         background-color: rgb(255, 255, 255, 0.75);
     }
 
-    .active div {
+    .active .nav-buttons {
         background-color: white;
+    }
+
+    .dropdown-language {
+        width: 100%;
+        padding-right: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            
+        }
+        .drop-button {
+            background-color: rgb(255, 255, 255, 0.5);
+            box-shadow: -12px 11px 32px 0px rgba(0,0,0,0.1);
+            -webkit-box-shadow: -12px 11px 32px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: -12px 11px 32px 0px rgba(0,0,0,0.1);
+            width: 175px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .drop-button:hover {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .dropdown-content {
+            display: none;
+            background-color: rgb(255, 255, 255, 0.5);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            z-index: 999999;
+            width: 135px;
+            padding: 10px 20px 10px 20px;
+        }
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown-content:hover {
+            background-color: rgb(255, 255, 255, 0.75);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .dropdown-content a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .dropdown:hover .dropdown-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .dropdown:hover .drop-button {
+            background-color: rgb(255, 255, 255, 0.75);
+        }
     }
 }
 
@@ -209,9 +278,12 @@ nav {
     }
     .contact-div {
         max-width: 400px;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
         p {
             width: 400px;
+        }
+        .tag-start, .tag-end {
+            font-size: 20px;
         }
         img {
             height: 30px;
@@ -228,6 +300,7 @@ nav {
             text-decoration: underline;
         }
     }
+
 }
 
 /* DEMO-SPECIFIC STYLES */
