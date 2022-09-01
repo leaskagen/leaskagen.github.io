@@ -235,22 +235,35 @@ nav .dropdown-language .dropdown:hover .drop-button {
   height: 75px;
 }
 .section-3 h2 {
-  text-decoration: underline;
+  font-size: 32px;
+}
+.section-3 a {
+  text-decoration: none;
   cursor: pointer;
+  color: black;
+}
+.section-3 a img {
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+  height: 28px;
 }
 .section-3 .slide-2a p {
   width: 70vw;
 }
 .section-3 .slide-2b p {
-  width: 1000px;
+  width: 1200px;
 }
 .section-3 .project-image {
-  height: 80vh;
+  height: 65vh;
   width: 100vw;
-  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.section-3 .project-image img {
+  margin-top: 5vh;
+  height: 580px;
 }
 
 .section-4 {

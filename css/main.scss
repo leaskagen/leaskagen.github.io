@@ -239,8 +239,18 @@ nav {
         }
     }
     h2 {
-        text-decoration: underline;
+        font-size: 32px;
+    }
+    a {
+        text-decoration: none;
         cursor: pointer;
+        color: black;
+        img {
+            position: relative;
+            top: 2px;
+            margin-left: 10px;
+            height: 28px;
+        }
     }
     .slide-2a {
         p {
@@ -249,16 +259,19 @@ nav {
     }
     .slide-2b {
         p {
-            width: 1000px;
+            width: 1200px;
         }
     }
     .project-image {
-        height: 80vh;
+        height: 65vh;
         width: 100vw;
-        background-color: lightgray;
         display: flex;
         justify-content: center;
         align-items: center;
+        img {
+            margin-top: 5vh;
+            height: 580px;
+        }
     }
 }
 
@@ -300,7 +313,6 @@ nav {
             text-decoration: underline;
         }
     }
-
 }
 
 /* DEMO-SPECIFIC STYLES */
