@@ -253,6 +253,7 @@ nav .dropdown-language .dropdown:hover .drop-button {
 }
 .section-3 .slide-2b p {
   width: 1200px;
+  max-width: 90%;
 }
 .section-3 .project-image {
   height: 65vh;
@@ -263,7 +264,8 @@ nav .dropdown-language .dropdown:hover .drop-button {
 }
 .section-3 .project-image img {
   margin-top: 5vh;
-  height: 580px;
+  height: auto;
+  max-width: 1024px;
 }
 
 .section-4 {

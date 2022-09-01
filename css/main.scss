@@ -260,6 +260,7 @@ nav {
     .slide-2b {
         p {
             width: 1200px;
+            max-width: 90%;
         }
     }
     .project-image {
@@ -270,7 +271,8 @@ nav {
         align-items: center;
         img {
             margin-top: 5vh;
-            height: 580px;
+            height: auto;
+            max-width: 1024px;
         }
     }
 }
@@ -332,8 +334,7 @@ nav {
     from { width: 0 }
     to { width: 100% }
 }
-  
-  /* The typewriter cursor effect */
+/* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: black }
